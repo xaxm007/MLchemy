@@ -1,14 +1,9 @@
-## 1. Dimensionality Reduction
+## Dimensionality Reduction
 Implementation of Machine Learning Dimensionality Reduction applying:
 
 - Principal Component Analysis (PCA)
 - Linear Discriminant Analysis (LDA)
 - Kernel PCA
-
-## 2. Regression
-Implementation of Machine Learning Regression applying:
-
-- Simple Linear Regression
 
 # Requirements
 
