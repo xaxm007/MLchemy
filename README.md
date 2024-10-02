@@ -1,9 +1,12 @@
-## Dimensionality Reduction
-Implementation of Machine Learning Dimensionality Reduction applying:
+## Regression
+Implementation of Machine Learning Regression applying:
 
-- Principal Component Analysis (PCA)
-- Linear Discriminant Analysis (LDA)
-- Kernel PCA
+- Simple Linear Regression
+- Multiple Linear Regression
+- Polynomial Linear Regression
+- Support Vector Regression
+- Decision Tree Regression
+- Random Forest Regression
 
 # Requirements
 
@@ -33,8 +36,3 @@ conda install ipykernel
 ```sh
 python -m ipykernel install --user --name <your_env_name> --display-name "<new_name_for_your_kernel"
 ```
-
-### Citation
-
-S. Aeberhard and M. Forina. "Wine," UCI Machine Learning Repository, 1992. [Online]. Available: https://doi.org/10.24432/C5PC7J.
-
