@@ -21,38 +21,25 @@ MLchemy/
 ├── Regression/
 │   ├── data
 │   │   └── dataset.csv
-│   ├── notebook
-│   │   ├── simple_linear_regression.ipynb
-│   │   ├── support_vector_regression.ipynb
-│   │   └── decision_tree_regression.ipynb
-│   └── README.md
+│   └── notebook
+│       ├── simple_linear_regression.ipynb
+│       ├── support_vector_regression.ipynb
+│       └── decision_tree_regression.ipynb
 │
 ├── Classification/
 │   ├── data
 │   │   └── dataset.csv
-│   ├── notebook
-│   │   ├── k_nearest_neighbours.ipynb
-│   │   ├── support_vector_machine.ipynb
-│   │   └── naive_bayes.ipynb
-│   └── README.md
+│   └── notebook
+│       ├── k_nearest_neighbours.ipynb
+│       ├── support_vector_machine.ipynb
+│       └── naive_bayes.ipynb
 │
-├── Clustering/
-│   ├── data
-│   │   └── dataset.csv
-│   ├── notebook
-│   │   ├── k_means_clustering.ipynb
-│   │   └── hierarchical_clustering.ipynb
-│   └── README.md
-│
-├── Dimensionality Reduction (PCA)/
-│   ├── data
-│   │   └── dataset.csv
-│   ├── notebook
-│   │   ├── principal_component_analysis.ipynb
-│   │   └── kernel_pca.ipynb
-│   └── README.md
-│
-└── README.md
+└── Dimensionality Reduction (PCA)/
+    ├── data
+    │   └── dataset.csv
+    └── notebook
+        ├── principal_component_analysis.ipynb
+        └── kernel_pca.ipynb
 ```
 
 ---
