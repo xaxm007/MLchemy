@@ -14,9 +14,9 @@ Visualization plot of different classification method on different dataset.
 |:--------------------------------:|:--------------------------------:|:--------------------------------:|
 | **Logistic Regression**          | **K-Nearest Neighbors**          | **Support Vector Machines**          |
 
-| ![Image 4](./images/decision_tree.png) | ![Image 5](./images/random_forest.png) | ![Image 6](./images/multiple.png) |
+| ![Image 4](./images/k-svm.png) | ![Image 5](./images/random_forest.png) | ![Image 6](./images/multiple.png) |
 |:--------------------------------:|:--------------------------------:|:--------------------------------:|
-| **Decision Tree Regression**          | **Random Forest Regression**          | **Multiple Linear Regression**          |
+| **Kernel SVM**          | **Random Forest Regression**          | **Multiple Linear Regression**          |
 
 | ![Image 7](./images/cancer.png)   |
 |:---------------------------------:|
