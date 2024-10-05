@@ -2,6 +2,7 @@
 
 - Logistic Regression
 - K-Nearest Neighbors 
+- Support Vector Machines
 
 ---
 
@@ -9,9 +10,9 @@
 
 Visualization plot of different classification method on different dataset.
 
-| ![Image 1](./images/logistic.png) | ![Image 2](./images/knn.png) | ![Image 3](./images/support_vector.png) |
+| ![Image 1](./images/logistic.png) | ![Image 2](./images/knn.png) | ![Image 3](./images/svm.png) |
 |:--------------------------------:|:--------------------------------:|:--------------------------------:|
-| **Logistic Regression**          | **K-Nearest Neighbors**          | **Support Vector Regression**          |
+| **Logistic Regression**          | **K-Nearest Neighbors**          | **Support Vector Machines**          |
 
 | ![Image 4](./images/decision_tree.png) | ![Image 5](./images/random_forest.png) | ![Image 6](./images/multiple.png) |
 |:--------------------------------:|:--------------------------------:|:--------------------------------:|
