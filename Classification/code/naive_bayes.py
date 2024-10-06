@@ -3,7 +3,7 @@ import pandas as pd
 
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler
-from sklearn.neighbors import KNeighborsClassifier
+from sklearn.naive_bayes import GaussianNB
 from sklearn.metrics import confusion_matrix, accuracy_score
 
 dataset = pd.read_csv('../data/Data.csv')
@@ -16,12 +16,10 @@ sc = StandardScaler()
 X_train = sc.fit_transform(X_train)
 X_test = sc.transform(X_test)
 
-classifier = KNeighborsClassifier(n_neighbors = 5, metric = 'minkowski', p = 2)
+classifier = GaussianNB()
 classifier.fit(X_train, Y_train)
 
 Y_pred = classifier.predict(X_test)
-print(np.concatenate((Y_pred.reshape(len(Y_pred),1), Y_test.reshape(len(Y_test),1)),1))
-
 cm = confusion_matrix(Y_test, Y_pred)
 print(cm)
 print(accuracy_score(Y_test, Y_pred))

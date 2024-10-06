@@ -3,10 +3,10 @@ import pandas as pd
 
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler
-from sklearn.neighbors import KNeighborsClassifier
+from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import confusion_matrix, accuracy_score
 
-dataset = pd.read_csv('../data/Data.csv')
+dataset = pd.read_csv('ENTER_THE_NAME_OF_YOUR_DATASET_HERE.csv')
 X = dataset.iloc[:, :-1].values
 Y = dataset.iloc[:, -1].values
 
@@ -16,12 +16,10 @@ sc = StandardScaler()
 X_train = sc.fit_transform(X_train)
 X_test = sc.transform(X_test)
 
-classifier = KNeighborsClassifier(n_neighbors = 5, metric = 'minkowski', p = 2)
+classifier = RandomForestClassifier(n_estimators = 10, criterion = 'entropy', random_state = 0)
 classifier.fit(X_train, Y_train)
 
 Y_pred = classifier.predict(X_test)
-print(np.concatenate((Y_pred.reshape(len(Y_pred),1), Y_test.reshape(len(Y_test),1)),1))
-
 cm = confusion_matrix(Y_test, Y_pred)
 print(cm)
 print(accuracy_score(Y_test, Y_pred))
