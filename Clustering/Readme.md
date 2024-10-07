@@ -9,9 +9,13 @@
 
 Visualization plot of different regressions method on different dataset.
 
-| ![Image 1](./images/kmeans.png) | ![Image 2](./images/hiearch.png) |
+| ![Image 1](./images/elbow.png) | ![Image 2](./images/kmeans.png) |
 |:--------------------------------:|:--------------------------------:|
-| **K-Means Clustering**          | **Hierarchical Clustering**          |
+| **Elbow Method**          | **K-Means Clustering**          |
+
+| ![Image 3](./images/dendo.png) | ![Image 4](./images/hierarch.png) |
+|:--------------------------------:|:--------------------------------:|
+| **Dendogram**          | **Hierarchical Clustering**          |
 
 ---
 
