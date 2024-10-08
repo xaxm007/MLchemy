@@ -1,4 +1,4 @@
-## 📎 Clustering
+## 📎 Association Rule Learning 
 
 - Apriori
 - Eclat
