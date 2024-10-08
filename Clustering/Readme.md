@@ -7,7 +7,7 @@
 
 ## 📉 Visualization
 
-Visualization plot of different regressions method on different dataset.
+Visualization plot of different clustering method.
 
 | ![Image 1](./images/elbow.png) | ![Image 2](./images/kmeans.png) |
 |:--------------------------------:|:--------------------------------:|
