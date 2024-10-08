@@ -69,6 +69,10 @@ Machine Learning Implementations covered in this repository:
    - K-Means Clustering
    - Hierarchical Clustering
 
+- **[Association Rule Learning](./Association%20Rule%20Learning/)**:
+   - Apriori
+   - Eclat
+
 - **[Dimensionality Reduction](./PCA/)**: 
    - Principal Component Analysis (PCA)
    - Linear Discriminant Analysis (LDA)
@@ -133,6 +137,7 @@ To run the code in this repository, you need the following:
 - Pandas 
 - Scikit-learn
 - Matplotlib
+- Apyori
 - Jupyter Notebook
 - Required packages are listed in `requirements.txt`. Install them using:
 
