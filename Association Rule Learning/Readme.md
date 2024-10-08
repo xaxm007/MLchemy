@@ -6,7 +6,7 @@
 
 ## 📉 Visualization
 
-Visualization plot of different association rule learning model.
+Visualization plot of different association rule learning method.
 
 | ![Image 1](./images/apriori.png) | ![Image 2](./images/eclat.png) |
 |:--------------------------------:|:--------------------------------:|
