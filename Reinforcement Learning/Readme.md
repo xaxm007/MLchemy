@@ -6,11 +6,11 @@
 
 ## 📉 Visualization
 
-Visualization plot of different reinforcement learning method.
+Visualization plot of histogram for different reinforcement learning method.
 
-| ![Image 1](./images/ucb.png) | ![Image 2](./images/eclat.png) |
+| ![Image 1](./images/ucb.png) | ![Image 2](./images/thompson.png) |
 |:--------------------------------:|:--------------------------------:|
-| **Upper Confidence Bound (Histogram)**          | **Thompson Sampling**          |
+| **Upper Confidence Bound**          | **Thompson Sampling**          |
 
 ---
 
