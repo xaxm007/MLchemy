@@ -77,6 +77,9 @@ Machine Learning Implementations covered in this repository:
    - Upper Confidence Bound
    - Thompson Sampling
 
+- **[Natural Language Processing](./Natural%20Language%20Processing/)**
+   - Bag of Words
+
 - **[Dimensionality Reduction](./PCA/)**: 
    - Principal Component Analysis (PCA)
    - Linear Discriminant Analysis (LDA)
@@ -142,6 +145,8 @@ To run the code in this repository, you need the following:
 - Scikit-learn
 - Matplotlib
 - Apyori
+- Seaborn
+- NLTK
 - Jupyter Notebook
 - Required packages are listed in `requirements.txt`. Install them using:
 
