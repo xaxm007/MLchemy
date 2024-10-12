@@ -73,6 +73,10 @@ Machine Learning Implementations covered in this repository:
    - Apriori
    - Eclat
 
+- **[Reinforcement Learning](./Reinforcement%20Learning/)**
+   - Upper Confidence Bound
+   - Thompson Sampling
+
 - **[Dimensionality Reduction](./PCA/)**: 
    - Principal Component Analysis (PCA)
    - Linear Discriminant Analysis (LDA)
