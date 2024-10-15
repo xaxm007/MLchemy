@@ -80,6 +80,9 @@ Machine Learning Implementations covered in this repository:
 - **[Natural Language Processing](./Natural%20Language%20Processing/)**
    - Bag of Words
 
+- **[Deep Learning](./Deep%20Learning/)**
+   - Artificial Neural Networks
+
 - **[Dimensionality Reduction](./PCA/)**: 
    - Principal Component Analysis (PCA)
    - Linear Discriminant Analysis (LDA)
