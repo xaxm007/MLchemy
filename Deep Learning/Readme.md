@@ -1,5 +1,6 @@
 ## 📎 Deep Learning
 
+- Artificial Neural Networks
 ---
 
 ## 🛠️ Requirements
@@ -9,3 +10,5 @@
 - Matplotlib
 - Tensorflow
 - Jupyter Notebook
+
+### Note: This implementation uses tensorflow-metal
