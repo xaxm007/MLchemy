@@ -1,7 +1,7 @@
 ## 📎 Deep Learning
 
 - Artificial Neural Networks
-
+- Convolutional Neural Networks
 ---
 
 ## 📉 Visualization

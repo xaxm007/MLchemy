@@ -82,6 +82,7 @@ Machine Learning Implementations covered in this repository:
 
 - **[Deep Learning](./Deep%20Learning/)**
    - Artificial Neural Networks
+   - Convolutional Neural Networks
 
 - **[Dimensionality Reduction](./PCA/)**: 
    - Principal Component Analysis (PCA)
