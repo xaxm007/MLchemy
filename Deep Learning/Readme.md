@@ -2,6 +2,7 @@
 
 - Artificial Neural Networks
 - Convolutional Neural Networks
+
 ---
 
 ## 📉 Visualization
@@ -22,4 +23,6 @@ Visualization of different Deep Learning model.
 - Tensorflow
 - Jupyter Notebook
 
-### Note: This implementation uses tensorflow-metal
+### Note: 
+- This implementation uses tensorflow-metal.
+- Dataset used in this implementation 👉 [Cat and Dog](https://www.kaggle.com/datasets/tongpython/cat-and-dog).

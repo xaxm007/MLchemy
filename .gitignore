@@ -1,1 +1,5 @@
+# Ignore .DS_Store files from all folders
 .DS_Store
+
+#Ignore Large Files.
+Deep Learning/data/dataset/
