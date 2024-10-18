@@ -9,9 +9,11 @@
 
 Visualization of different Deep Learning model.
 
-| ![Image 1](./images/ann.png) | ![Image 2](./images/cnn.png) |
+| ![Image 1](./images/annop.png) | ![Image 2](./images/cnn.png) |
 |:--------------------------------:|:--------------------------------:|
-| **Artificial Neural Network**          | **Convolutional Neural Networks**          |
+| ![Image 1](./images/trainacc_ann.png) | ![Image 2](./images/trainacc_cnn.png) |
+| ![Image 1](./images/trainloss_ann.png) | ![Image 2](./images/trainloss_cnn.png) |
+| **Artificial Neural Network**          | **Convolutional Neural Network**          |
 
 ---
 

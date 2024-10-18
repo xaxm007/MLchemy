@@ -1,28 +1,31 @@
 import tensorflow as tf
-from keras.preprocessing.image import ImageDataGenerator
+from tensorflow.keras.preprocessing import image
+from tensorflow.keras.preprocessing.image import ImageDataGenerator
 
 import numpy as np
-from keras.preprocessing import image
+import matplotlib.pyplot as plt
+from sklearn.metrics import confusion_matrix, ConfusionMatrixDisplay
 
 train_datagen = ImageDataGenerator(rescale = 1./255,
                                    shear_range = 0.2,
                                    zoom_range = 0.2,
                                    horizontal_flip = True)
-training_set = train_datagen.flow_from_directory('dataset/training_set',
+training_set = train_datagen.flow_from_directory('../data/dataset/training_set',
                                                  target_size = (64, 64),
                                                  batch_size = 32,
                                                  class_mode = 'binary')
 
 test_datagen = ImageDataGenerator(rescale = 1./255)
-test_set = test_datagen.flow_from_directory('dataset/test_set',
+test_set = test_datagen.flow_from_directory('../data/dataset/test_set',
                                             target_size = (64, 64),
                                             batch_size = 32,
                                             class_mode = 'binary')
 
 cnn = tf.keras.models.Sequential()
 
-cnn.add(tf.keras.layers.Conv2D(filters=32, kernel_size=3, activation='relu', input_shape=[64, 64, 3]))
+cnn.add(tf.keras.layers.Input(shape = [64, 64, 3]))
 
+cnn.add(tf.keras.layers.Conv2D(filters=32, kernel_size=3, activation='relu'))
 cnn.add(tf.keras.layers.MaxPool2D(pool_size=2, strides=2))
 
 cnn.add(tf.keras.layers.Conv2D(filters=32, kernel_size=3, activation='relu'))
@@ -36,15 +39,23 @@ cnn.add(tf.keras.layers.Dense(units=1, activation='sigmoid'))
 
 cnn.compile(optimizer = 'adam', loss = 'binary_crossentropy', metrics = ['accuracy'])
 
-cnn.fit(x = training_set, validation_data = test_set, epochs = 25)
+model = cnn.fit(x = training_set, validation_data = test_set, epochs = 25)
 
-test_image = image.load_img('dataset/single_prediction/cat_or_dog_1.jpg', target_size = (64, 64))
-test_image = image.img_to_array(test_image)
-test_image = np.expand_dims(test_image, axis = 0)
-result = cnn.predict(test_image)
-training_set.class_indices
-if result[0][0] == 1:
-    prediction = 'dog'
-else:
-    prediction = 'cat'
-print(prediction)
+plt.plot(model.history['accuracy'])
+plt.plot(model.history['val_accuracy'])
+plt.title('Model accuracy')
+plt.ylabel('Accuracy')
+plt.xlabel('Epoch')
+plt.legend(['Train', 'Validation'], loc='upper left')
+plt.show()
+
+y_pred = cnn.predict(test_set)
+y_pred = np.where(y_pred > 0.5, 1, 0)
+
+y_true = test_set.classes
+
+cm = confusion_matrix(y_true, y_pred)
+
+disp = ConfusionMatrixDisplay(confusion_matrix=cm, display_labels=['Cat', 'Dog'])
+disp.plot(cmap=plt.cm.Blues)
+plt.show()
