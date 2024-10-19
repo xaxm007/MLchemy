@@ -7,6 +7,7 @@
 - Naive Bayes
 - Decision Tree Classification
 - Random Forest Classification
+- XGBoost Classification
 
 ---
 
@@ -26,9 +27,9 @@ Visualization plot of different classification method on different dataset.
 |:--------------------------------:|:--------------------------------:|
 | **Decision Tree**          | **Random Forest**          | 
 
-| ![Image 8](./images/cancer.png)   |
-|:---------------------------------:|
-| **Breast Cancer Detection (Logistic Regression)** |
+| ![Image 8](./images/cancer.png)   | ![Image 9](./images/xgb.png) |
+|:---------------------------------:|:--------------------------------:|
+| **Breast Cancer Detection (Logistic Regression)** | **XGBoost Classification**          | 
 
 ---
 

@@ -89,6 +89,10 @@ Machine Learning Implementations covered in this repository:
    - Linear Discriminant Analysis (LDA)
    - Kernel PCA
 
+- **[Model Selection](./Model%20Selection/)**
+   - Grid Search
+   - k-Fold Cross Validation
+
 ---
 
 ## 👉 How to Use
@@ -151,6 +155,7 @@ To run the code in this repository, you need the following:
 - Apyori
 - Seaborn
 - NLTK
+- XGBoost
 - Jupyter Notebook
 - Required packages are listed in `requirements.txt`. Install them using:
 
